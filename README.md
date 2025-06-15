@@ -52,3 +52,5 @@
 2. två st lekar **12:00**
 3. mat ca **12:30**
 4. tre st lekar **13:40**
+5. middag lös något enkelt
+    - ekebygrillen pizza?
