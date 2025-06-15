@@ -10,7 +10,6 @@ planeringslista för midsommar hos Ines!
     - **lisa** fixar en bar
 - samuel
     - bygga midsommarstång & planera och fixa lekar
-        - dela in lag
         - [5 kamp](#5-kamp)
 - robin & signe
     - fixa inköp kransar och blommor
@@ -22,26 +21,43 @@ planeringslista för midsommar hos Ines!
 10 pers
 
 ## 5 kamp
-- kasta stövel
-- irländsk julafton
-- dragkamp
-- flip cup
-- kubb
+1. kasta stövel
+2. flip cup 
+<br>
+-- LUNCH --
+<br>
+3. kubb
+4. irländsk julafton
+5. dragkamp
+
+### lag 1
+- viveca
+- samuel
+- signe
+- tim
+- sebbe
+
+### lag 2
+- lea
+- kelam
+- lisa
+- ines
+- robin
 
 ## handlingslista alkohol
 - 2 st galliano
 - 2 st 10 pack nubbar
 - 1 st Gin
 - 2 flaskor bubbel
-    - cava och nåt annat
+    - cava + nåt annat
 - 1 box chapel hill vitt
 
 ## agenda
 
 1. ses kl **11:00**
     - kransar
-2. två st lekar **12:00**
-3. mat ca **12:30**
-4. tre st lekar **13:40**
+2. två st lekar **12:30**
+3. mat ca **13:30**
+4. tre st lekar **14:30**
 5. middag lös något enkelt
     - ekebygrillen pizza?
