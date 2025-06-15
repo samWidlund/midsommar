@@ -9,7 +9,7 @@ planeringslista för midsommar hos Ines!
     - fix av mat
     - **lisa** fixar en bar
 - samuel
-    - bygga midsommarstång & planera och fixa lekar
+    - bygga midsommarstång & fixa lekar
         - [5 kamp](#5-kamp)
 - robin & signe
     - fixa inköp kransar och blommor
