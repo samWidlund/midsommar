@@ -7,6 +7,7 @@ planeringslista för midsommar hos Ines!
     - inköp alkohol ([handlingsLista](#handlingslista-alkohol))
 - ines, viveca & lisa
     - fix av mat
+    - fixa snapsvisors
     - **lisa** fixar en bar
 - samuel
     - bygga midsommarstång & fixa lekar
