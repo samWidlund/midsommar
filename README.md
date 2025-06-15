@@ -1,4 +1,5 @@
  # MIDSOMMAR 2025!
+planeringslista för midsommar hos Ines!
 
 ## lista + ansvar
 - tim
