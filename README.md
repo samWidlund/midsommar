@@ -50,6 +50,7 @@ planeringslista för midsommar hos Ines!
 - 2 flaskor bubbel
     - cava + nåt annat
 - 1 box chapel hill vitt
+### samtliga tar även med egen alkohol
 
 ## agenda
 
