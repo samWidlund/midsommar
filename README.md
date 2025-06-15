@@ -20,8 +20,8 @@
 - kubb
 
 ## ansvar 
-- bygger en midsommarstång
-- lisa bygger en bar
+- **samuel/kelam** bygger en midsommarstång
+- **lisa** bygger en bar
 - högtalare? ines har en bt
 
 ## måste köpas
@@ -36,6 +36,14 @@
     - handling lista
 - ta med själv också
 - ### TIM KÖPER GEMENSAM ALKOHOL
+
+### handlingslista
+- 2 st galliano
+- 2 st 10 pack nubbar
+- 1 st Gin
+- 2 flaskor bubbel
+    - cava och nåt annat
+- 1 box chapel hill vitt
 
 ## agenda
 
