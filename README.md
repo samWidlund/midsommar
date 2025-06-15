@@ -1,17 +1,25 @@
  # MIDSOMMAR 2025!
-planeringslista för midsommar hos Ines!
+planeringslista för midsommar hos Ines! 
+- [agenda](#agenda)
 
 ## lista + ansvar
 - tim
-- ines
+    - inköp alkohol ([handlingsLista](#handlingslista-alkohol))
+- ines, viveca & lisa
+    - fix av mat
+    - **lisa** fixar en bar
 - samuel
-- lisa 
-- robin
-- kelam
-- sebbe
-- viveca
+    - bygga midsommarstång & planera och fixa lekar
+        - dela in lag
+        - [5 kamp](#5-kamp)
+- robin & signe
+    - fixa inköp kransar och blommor
+- kelam & sebbe
+    -  fixa en musikquiz 
 - lea
-- signe
+    - oklart
+
+10 pers
 
 ## 5 kamp
 - kasta stövel
@@ -20,25 +28,7 @@ planeringslista för midsommar hos Ines!
 - flip cup
 - kubb
 
-## ansvar 
-- **samuel/kelam** bygger en midsommarstång
-- **lisa** bygger en bar
-- högtalare? ines har en bt
-
-## måste köpas
-- blommor till kransar
-- metalltråd för kransar
-- köpa kransar från dollarstore? ta bort blommor
-- pynt till bord?
-- ### SIGNE RONKA LÖSER KRANSAR!!!
-
-## alkohol
-- köpa lite till alla
-    - handling lista
-- ta med själv också
-- ### TIM KÖPER GEMENSAM ALKOHOL
-
-### handlingslista
+## handlingslista alkohol
 - 2 st galliano
 - 2 st 10 pack nubbar
 - 1 st Gin
