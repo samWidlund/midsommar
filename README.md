@@ -5,7 +5,7 @@ planeringslista för midsommar hos Ines!
 ## lista + ansvar
 - tim
     - inköp alkohol ([handlingsLista](#handlingslista-alkohol))
-- ines, viveca & lisa
+- ines, viveca, lea & lisa
     - fix av mat
     - fixa snapsvisors
     - **lisa** fixar en bar
@@ -16,8 +16,6 @@ planeringslista för midsommar hos Ines!
     - fixa inköp kransar och blommor
 - kelam & sebbe
     -  fixa en musikquiz 
-- lea
-    - oklart
 
 10 pers
 
