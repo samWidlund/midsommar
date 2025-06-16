@@ -30,8 +30,13 @@ function App() {
     let timeout;
     if (!isAutoScrolling) {
       timeout = setTimeout(() => {
-        setIsAutoScrolling(true);
-      }, 3000);
+        // Smoothly scroll back to the first section
+        const scrollToStart = () => {
+          setCurrentSection(0);
+          setIsAutoScrolling(true);
+        };
+        scrollToStart();
+      }, 5000);
     }
 
     return () => {
@@ -41,7 +46,13 @@ function App() {
   }, [currentSection, isAutoScrolling, handleWheel]);
 
   return (
-    <main className={`auto-scroll ${!isAutoScrolling ? 'manual-scroll' : ''}`} style={{ transform: `translateY(-${currentSection * 100}vh)` }}>
+    <main 
+      className={`auto-scroll ${!isAutoScrolling ? 'manual-scroll' : ''}`} 
+      style={{ 
+        transform: `translateY(-${currentSection * 100}vh)`,
+        transition: isAutoScrolling ? 'none' : 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)'
+      }}
+    >
       {/* Hero Section */}
       <section className="h-screen w-screen relative">
         <div 

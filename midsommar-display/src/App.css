@@ -33,7 +33,7 @@ body {
 
 .auto-scroll {
   animation: scroll 60s linear infinite;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .manual-scroll {
