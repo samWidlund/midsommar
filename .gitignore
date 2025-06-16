@@ -1,0 +1,10 @@
+# enviroment variables
+/.env
+
+# vim files
+*.un~
+*~
+
+# node modules
+/node_modules
+/midsommar-display/node_modules
