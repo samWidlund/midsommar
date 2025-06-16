@@ -56,11 +56,11 @@ function App() {
       </section>
 
       {/* Agenda Section */}
-      <section className="h-screen w-screen bg-black/80 flex items-center justify-center">
+      <section className="h-screen w-screen flex items-center justify-center">
         <div className="max-w-2xl w-full p-8">
-          <h2 className="text-4xl font-semibold text-white mb-8 text-center">Agenda</h2>
+          <h2 className="text-4xl font-semibold text-white mb-8 text-center drop-shadow-lg">Agenda</h2>
           <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-            <ul className="space-y-4 text-xl">
+            <ul className="space-y-4 text-xl text-white">
               <li>1. ses kl 11:00 - kransar</li>
               <li>2. två st lekar 12:30</li>
               <li>3. mat ca 13:30</li>
@@ -72,11 +72,11 @@ function App() {
       </section>
 
       {/* 5 Kamp Section */}
-      <section className="h-screen w-screen bg-black/80 flex items-center justify-center">
+      <section className="h-screen w-screen flex items-center justify-center">
         <div className="max-w-2xl w-full p-8">
-          <h2 className="text-4xl font-semibold text-white mb-8 text-center">5 Kamp</h2>
+          <h2 className="text-4xl font-semibold text-white mb-8 text-center drop-shadow-lg">5 Kamp</h2>
           <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-            <ul className="space-y-4 text-xl">
+            <ul className="space-y-4 text-xl text-white">
               <li>1. kasta stövel</li>
               <li>2. flip cup</li>
               <li>3. kubb</li>
@@ -88,13 +88,13 @@ function App() {
       </section>
 
       {/* Teams Section */}
-      <section className="h-screen w-screen bg-black/80 flex items-center justify-center">
+      <section className="h-screen w-screen flex items-center justify-center">
         <div className="max-w-4xl w-full p-8">
-          <h2 className="text-4xl font-semibold text-white mb-8 text-center">Lag</h2>
+          <h2 className="text-4xl font-semibold text-white mb-8 text-center drop-shadow-lg">Lag</h2>
           <div className="grid grid-cols-2 gap-8">
             <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="text-2xl mb-4 text-center">Lag 1</h3>
-              <ul className="space-y-2 text-xl">
+              <h3 className="text-2xl mb-4 text-center text-white">Lag 1</h3>
+              <ul className="space-y-2 text-xl text-white">
                 <li>viveca</li>
                 <li>samuel</li>
                 <li>signe</li>
@@ -103,8 +103,8 @@ function App() {
               </ul>
             </div>
             <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="text-2xl mb-4 text-center">Lag 2</h3>
-              <ul className="space-y-2 text-xl">
+              <h3 className="text-2xl mb-4 text-center text-white">Lag 2</h3>
+              <ul className="space-y-2 text-xl text-white">
                 <li>lea</li>
                 <li>kelam</li>
                 <li>lisa</li>
