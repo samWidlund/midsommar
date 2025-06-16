@@ -59,10 +59,12 @@ function App() {
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${midsummer})` }}
         />
-        <div className="h-screen w-screen bg-black/80 flex items-center justify-center">
-          <h1 className="text-6xl font-semibold text-white drop-shadow-lg tracking-wider">
-            midsommar hos Ines!
-          </h1>
+        <div className="h-screen w-screen bg-black/70 flex items-center justify-center">
+          <div className="snake-border">
+            <h1 className="text-7xl font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] tracking-wider">
+              midsommar hos Ines!
+            </h1>
+          </div>
         </div>
       </section>
 
