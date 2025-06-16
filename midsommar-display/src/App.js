@@ -105,22 +105,22 @@ function App() {
           <div className="grid grid-cols-2 gap-8">
             <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
               <h3 className="text-2xl mb-4 text-center text-white">Lag 1</h3>
-              <ul className="space-y-2 text-xl text-white">
-                <li>viveca</li>
-                <li>samuel</li>
-                <li>signe</li>
-                <li>tim</li>
-                <li>sebbe</li>
+              <ul className="space-y-2 text-xl text-white text-center">
+                <li>• viveca</li>
+                <li>• samuel</li>
+                <li>• signe</li>
+                <li>• tim</li>
+                <li>• sebbe</li>
               </ul>
             </div>
             <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="text-2xl mb-4 text-center text-white">Lag 2</h3>
-              <ul className="space-y-2 text-xl text-white">
-                <li>lea</li>
-                <li>kelam</li>
-                <li>lisa</li>
-                <li>ines</li>
-                <li>robin</li>
+              <h3 className="text-2xl mb-4 text-center text-white">Lag 2 (lite sämre)</h3>
+              <ul className="space-y-2 text-xl text-white text-center">
+                <li>• lea</li>
+                <li>• kelam</li>
+                <li>• lisa</li>
+                <li>• ines</li>
+                <li>• robin</li>
               </ul>
             </div>
           </div>
