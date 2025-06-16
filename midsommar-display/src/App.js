@@ -5,7 +5,7 @@ import { useEffect, useState, useCallback } from 'react';
 function App() {
   const [currentSection, setCurrentSection] = useState(0);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
-  const totalSections = 4;
+  const totalSections = 5;
 
   const handleWheel = useCallback((e) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ function App() {
     if (!isAutoScrolling) {
       timeout = setTimeout(() => {
         setIsAutoScrolling(true);
-      }, 5000);
+      }, 3000);
     }
 
     return () => {
@@ -113,6 +113,13 @@ function App() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <section className="h-screen w-screen flex items-center justify-center">
+        <div className="text-white text-xl font-light tracking-wide">
+          © 2024 Samuel Widlund
         </div>
       </section>
     </main>

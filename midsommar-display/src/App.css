@@ -26,8 +26,8 @@ body {
   75%, 95% {
     transform: translateY(-300vh);
   }
-  100% {
-    transform: translateY(0);
+  97%, 100% {
+    transform: translateY(-400vh);
   }
 }
 
