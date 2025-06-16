@@ -1,13 +1,13 @@
 import './App.css';
 import midsummer from './img/midsummer.jpg';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 
 function App() {
   const [currentSection, setCurrentSection] = useState(0);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const totalSections = 4;
 
-  const handleWheel = (e) => {
+  const handleWheel = useCallback((e) => {
     e.preventDefault();
     
     if (e.deltaY > 0 && currentSection < totalSections - 1) {
@@ -20,7 +20,7 @@ function App() {
     
     // Pause auto-scroll when manually scrolling
     setIsAutoScrolling(false);
-  };
+  }, [currentSection, totalSections]);
 
   useEffect(() => {
     const main = document.querySelector('main');
@@ -38,7 +38,7 @@ function App() {
       main.removeEventListener('wheel', handleWheel);
       clearTimeout(timeout);
     };
-  }, [currentSection, isAutoScrolling]);
+  }, [currentSection, isAutoScrolling, handleWheel]);
 
   return (
     <main className={`auto-scroll ${!isAutoScrolling ? 'manual-scroll' : ''}`} style={{ transform: `translateY(-${currentSection * 100}vh)` }}>
