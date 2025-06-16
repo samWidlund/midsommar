@@ -1,1 +1,45 @@
+html, body, #root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes scroll {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-100vh);
+  }
+  50%, 70% {
+    transform: translateY(-200vh);
+  }
+  75%, 95% {
+    transform: translateY(-300vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.auto-scroll {
+  animation: scroll 60s linear infinite;
+  transition: transform 0.5s ease-in-out;
+}
+
+.manual-scroll {
+  animation: none;
+}
+
+.auto-scroll:hover {
+  animation-play-state: paused;
+}
