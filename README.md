@@ -76,7 +76,5 @@ alla har ett glas vardera med dricka, alkohol eller vatten?
    - ekebygrillen pizza?
 
 ## backlog
-- add drink  api list
-- add ai api with jokes?
-- add funny images slideshow
-
+- add drink list via api
+- add ai funny joke api
