@@ -30,11 +30,13 @@ function App() {
     // If we're already in the process of scrolling, ignore the event
     if (isScrolling) return;
     
+    // Always disable auto-scroll when manually scrolling
+    setIsAutoScrolling(false);
+    
     if (e.deltaY > 0 && currentSection < totalSections - 1) {
       // Scroll down
       setIsScrolling(true);
       setCurrentSection(prev => prev + 1);
-      setIsAutoScrolling(false);
       
       // Reset scrolling state after animation completes
       setTimeout(() => {
@@ -44,7 +46,6 @@ function App() {
       // Scroll up
       setIsScrolling(true);
       setCurrentSection(prev => prev - 1);
-      setIsAutoScrolling(false);
       
       // Reset scrolling state after animation completes
       setTimeout(() => {
@@ -57,7 +58,7 @@ function App() {
     const main = document.querySelector('main');
     main.addEventListener('wheel', handleWheel, { passive: false });
     
-    // Resume auto-scroll after 5 seconds of no manual scrolling
+    // Resume auto-scroll after 5 seconds of no interaction
     let timeout;
     if (!isAutoScrolling) {
       timeout = setTimeout(() => {
@@ -82,13 +83,30 @@ function App() {
     };
   }, [currentSection, isAutoScrolling, handleWheel]);
 
+  const handleMouseEnter = useCallback(() => {
+    setIsAutoScrolling(false);
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    // Only resume auto-scroll if we're not in the middle of a manual scroll
+    if (!isScrolling) {
+      setIsAutoScrolling(true);
+    }
+  }, [isScrolling]);
+
   return (
     <main 
-      className={`auto-scroll ${!isAutoScrolling ? 'manual-scroll' : ''}`} 
+      className={`auto-scroll ${!isAutoScrolling ? 'manual-scroll' : ''} cursor-pointer`} 
       style={{ 
         transform: `translateY(-${currentSection * 100}vh)`,
         transition: isAutoScrolling ? 'none' : 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)'
       }}
+      onClick={() => {
+        const nextSlide = (currentSlide + 1) % slides.length;
+        setCurrentSlide(nextSlide);
+      }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       {/* Hero Section */}
       <section className="h-screen w-screen relative">
@@ -168,16 +186,27 @@ function App() {
       </section>
 
       {/* Slideshow Section */}
-      <section className="h-screen w-screen flex items-center justify-center">
+      <section 
+        className="h-screen w-screen flex items-center justify-center cursor-pointer"
+        onClick={() => {
+          const nextSlide = (currentSlide + 1) % slides.length;
+          setCurrentSlide(nextSlide);
+        }}
+      >
         <div className="max-w-4xl w-full p-8">
           <h2 className="text-5xl font-semibold text-white mb-8 text-center drop-shadow-lg">Minnesbilder</h2>
           <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-              <img 
-                src={slides[currentSlide]} 
-                alt="Minnesbild" 
-                className="w-full h-full object-cover transition-opacity duration-500"
-              />
+            <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-black/50">
+              {slides.map((slide, index) => (
+                <img 
+                  key={index}
+                  src={slide} 
+                  alt="Minnesbild" 
+                  className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ease-in-out ${
+                    index === currentSlide ? 'opacity-100' : 'opacity-0'
+                  }`}
+                />
+              ))}
             </div>
             <div className="flex justify-center gap-2 mt-4">
               {slides.map((_, index) => (
@@ -186,7 +215,10 @@ function App() {
                   className={`w-3 h-3 rounded-full transition-colors ${
                     index === currentSlide ? 'bg-yellow-300' : 'bg-white/50'
                   }`}
-                  onClick={() => setCurrentSlide(index)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setCurrentSlide(index);
+                  }}
                 />
               ))}
             </div>
