@@ -1,6 +1,5 @@
 import './App.css';
 import midsummer from './img/midsummer.jpg';
-import samuelWLogo from './img/samuelWLogo.png';
 import { useEffect, useState, useCallback } from 'react';
 
 function App() {
