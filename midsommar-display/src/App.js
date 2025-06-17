@@ -192,7 +192,7 @@ function App() {
         }}
       >
         <div className="max-w-4xl w-full p-8">
-          <h2 className="text-5xl font-semibold text-white mb-8 text-center drop-shadow-lg">Minnesbilder</h2>
+          <h2 className="text-5xl font-semibold text-white mb-8 text-center drop-shadow-lg">Goofy bilder</h2>
           <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-black/50">
               {slides.map((slide, index) => (
