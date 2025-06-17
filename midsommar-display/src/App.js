@@ -1,5 +1,6 @@
 import './App.css';
 import midsummer from './img/midsummer.jpg';
+import samuelWLogo from './img/samuelWLogo.png';
 import { useEffect, useState, useCallback } from 'react';
 
 function App() {
@@ -74,11 +75,11 @@ function App() {
           <h2 className="text-4xl font-semibold text-white mb-8 text-center drop-shadow-lg">Agenda</h2>
           <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
             <ul className="space-y-4 text-xl text-white">
-              <li>1. ses kl 11:00 - kransar</li>
-              <li>2. två st lekar 12:30</li>
-              <li>3. mat ca 13:30</li>
-              <li>4. tre st lekar 14:30</li>
-              <li>5. middag lös något enkelt - ekebygrillen pizza?</li>
+              <li>1. 11:00 start kransfix </li>
+              <li>2. 12:30 två st lekar</li>
+              <li>3. 13:30 lunch </li>
+              <li>4. 14:30 tre st lekar </li>
+              <li>5. middag löser vi enkelt, e.x pizza?</li>
             </ul>
           </div>
         </div>
@@ -92,9 +93,10 @@ function App() {
             <ul className="space-y-4 text-xl text-white">
               <li>1. kasta stövel</li>
               <li>2. flip cup</li>
-              <li>3. kubb</li>
+              <li>3. trebent löpning</li>
               <li>4. irländsk julafton</li>
               <li>5. dragkamp</li>
+              <li>extra - kubb & fylla glaset</li>
             </ul>
           </div>
         </div>
@@ -132,7 +134,7 @@ function App() {
       {/* Footer Section */}
       <section className="h-screen w-screen flex items-center justify-center">
         <div className="text-white text-xl font-light tracking-wide">
-          © 2024 Samuel Widlund
+          <img src={samuelWLogo} alt="Samuel Widlund" className="h-16 bg-transparent" />
         </div>
       </section>
     </main>
