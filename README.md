@@ -35,7 +35,7 @@ planeringslista för midsommar hos Ines!
 5. dragkamp
    - ett starkt rep, markera mitten, vinstlinjer markering vardera sida
 
-extra - trebent löpning
+extra - kubb
 
 extra - fylla glaset (individuellt)
 alla har ett glas vardera med dricka, alkohol eller vatten?
