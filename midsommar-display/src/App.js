@@ -133,8 +133,8 @@ function App() {
 
       {/* Footer Section */}
       <section className="h-screen w-screen flex items-center justify-center">
-        <div className="text-white text-xl font-light tracking-wide">
-          <img src={samuelWLogo} alt="Samuel Widlund" className="h-16 bg-transparent" />
+        <div className="text-white text-4xl font-light tracking-wide">
+          © 2024 Samuel Widlund
         </div>
       </section>
     </main>
