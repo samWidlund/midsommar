@@ -25,17 +25,17 @@ planeringslista för midsommar hos Ines!
 ## 5 kamp + material
 
 1. kasta stövel
-   stövel, samma rep som dragkamp för att markera linje. något för att markera mål
+   - stövel, samma rep som dragkamp för att markera linje. något för att markera mål
 2. flip cup
-   engångsmuggar, alkohol
-3. kubb
-   kubbspel, ev ölkubb?
+   - engångsmuggar, alkohol
+3. trebent löpning
+   - 3 personer åt gången, knyta ihop 2 ben = tre ben
 4. irländsk julafton
-   2 pinnar (1 per lag), någon form av kon för att runda
+   - 2 pinnar (1 per lag), någon form av kon för att runda
 5. dragkamp
-   ett starkt rep, markera mitten, vinstlinjer markering vardera sida
+   - ett starkt rep, markera mitten, vinstlinjer markering vardera sida
 
-extra - trebent löpning?
+extra - trebent löpning
 
 extra - fylla glaset (individuellt)
 alla har ett glas vardera med dricka, alkohol eller vatten?
