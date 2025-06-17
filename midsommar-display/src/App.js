@@ -12,6 +12,7 @@ function App() {
   const [currentSection, setCurrentSection] = useState(0);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isScrolling, setIsScrolling] = useState(false);
   const totalSections = 6; // Increased by 1 for the new slideshow section
 
   const slides = [
@@ -26,17 +27,31 @@ function App() {
   const handleWheel = useCallback((e) => {
     e.preventDefault();
     
+    // If we're already in the process of scrolling, ignore the event
+    if (isScrolling) return;
+    
     if (e.deltaY > 0 && currentSection < totalSections - 1) {
       // Scroll down
+      setIsScrolling(true);
       setCurrentSection(prev => prev + 1);
+      setIsAutoScrolling(false);
+      
+      // Reset scrolling state after animation completes
+      setTimeout(() => {
+        setIsScrolling(false);
+      }, 1000); // Match this with your transition duration
     } else if (e.deltaY < 0 && currentSection > 0) {
       // Scroll up
+      setIsScrolling(true);
       setCurrentSection(prev => prev - 1);
+      setIsAutoScrolling(false);
+      
+      // Reset scrolling state after animation completes
+      setTimeout(() => {
+        setIsScrolling(false);
+      }, 1000); // Match this with your transition duration
     }
-    
-    // Pause auto-scroll when manually scrolling
-    setIsAutoScrolling(false);
-  }, [currentSection, totalSections]);
+  }, [currentSection, totalSections, isScrolling]);
 
   useEffect(() => {
     const main = document.querySelector('main');
