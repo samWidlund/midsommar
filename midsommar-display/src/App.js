@@ -13,8 +13,9 @@ function App() {
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
-  const totalSections = 6; // Increased by 1 for the new slideshow section
+  const totalSections = 6;
 
+  // Slideshow images
   const slides = [
     angryviveca,
     androidtim,
@@ -27,10 +28,7 @@ function App() {
   const handleWheel = useCallback((e) => {
     e.preventDefault();
     
-    // If we're already in the process of scrolling, ignore the event
     if (isScrolling) return;
-    
-    // Always disable auto-scroll when manually scrolling
     setIsAutoScrolling(false);
     
     if (e.deltaY > 0 && currentSection < totalSections - 1) {
