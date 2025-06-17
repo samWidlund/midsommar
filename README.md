@@ -11,7 +11,6 @@ planeringslista för midsommar hos Ines!
 - ines, viveca, lea & lisa
   - fix av mat
   - fixa snapsvisors
-  - **lisa** fixar en bar
 - samuel
   - bygga midsommarstång & fixa lekar
     - [5 kamp](#5-kamp)
