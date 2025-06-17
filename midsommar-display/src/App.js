@@ -79,7 +79,7 @@ function App() {
       clearTimeout(timeout);
       clearInterval(slideTimer);
     };
-  }, [currentSection, isAutoScrolling, handleWheel]);
+  }, [currentSection, isAutoScrolling, handleWheel, slides.length]);
 
   const handleMouseEnter = useCallback(() => {
     setIsAutoScrolling(false);
