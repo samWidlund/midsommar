@@ -74,3 +74,9 @@ alla har ett glas vardera med dricka, alkohol eller vatten?
 4. tre st lekar **14:30**
 5. middag lös något enkelt
    - ekebygrillen pizza?
+
+## backlog
+- add drink  api list
+- add ai api with jokes?
+- add funny images slideshow
+
