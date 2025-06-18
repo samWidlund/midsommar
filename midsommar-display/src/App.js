@@ -13,7 +13,7 @@ function App() {
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
-  const totalSections = 6;
+  const totalSections = 7;
 
   // Slideshow images
   const slides = [
@@ -132,6 +132,24 @@ function App() {
               <li>- <span className="font-bold text-yellow-300">13:30</span> lunch </li>
               <li>- <span className="font-bold text-yellow-300">14:30</span> tre st lekar </li>
               <li>- middag löser vi enkelt, e.x pizza?</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Jokes AI Section */}
+      <section className="h-screen w-screen flex items-center justify-center">
+        <div className="max-w-2xl w-full p-8">
+          <h2 className="text-5xl font-semibold text-white mb-8 text-center drop-shadow-lg">AI Genererade skämt 😂</h2>
+          <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <ul className="space-y-6 text-2xl text-white">
+              <li>Skämt 1</li>
+              <li>Skämt 2</li>
+              <li>Skämt 3</li>
+              <li>Skämt 4</li>
+              <li>Skämt 5</li>
+              <li>Skämt 6</li>
+              <li>Skämt 8</li>
             </ul>
           </div>
         </div>
