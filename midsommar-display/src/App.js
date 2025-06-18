@@ -239,7 +239,7 @@ function App() {
               </ul>
             </div>
             <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="text-3xl mb-4 text-center text-white">Lag 2 (lite sämre)</h3>
+              <h3 className="text-3xl mb-4 text-center text-white">Lag 2 (lite sämre😂)</h3>
               <ul className="space-y-3 text-2xl text-white text-center">
                 <li>• lea</li>
                 <li>• kelam</li>
