@@ -13,6 +13,8 @@ function App() {
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [joke, setJoke] = useState('');
+  const [isLoadingJoke, setIsLoadingJoke] = useState(false);
   const totalSections = 7;
 
   // Slideshow images
@@ -24,6 +26,55 @@ function App() {
     skironka,
     snipesamuel
   ];
+
+  // hugging face ai API
+  const fetchJoke = async () => {
+    setIsLoadingJoke(true);
+    try {
+      const response = await fetch(
+        "https://api-inference.huggingface.co/models/FaisalGh/distilgpt2-joke-generator",
+        {
+          headers: {
+            "Authorization": "Bearer " + process.env.REACT_APP_MIDSUMMER_HF_TOKEN,
+            "Content-Type": "application/json",
+          },
+          method: "POST",
+          body: JSON.stringify({
+            inputs: "Tell me a joke:",
+            parameters: {
+              max_length: 70,
+              temperature: 0.7,
+            }
+          }),
+        }
+      );
+      const result = await response.json();
+      if (Array.isArray(result) && result[0]?.generated_text) {
+        setJoke(result[0].generated_text);
+      } else if (result.error) {
+        setJoke('API error: ' + result.error);
+      } else {
+        setJoke('Failed to load joke. Try again later!');
+      }
+    } catch (error) {
+      console.error('Error fetching joke:', error);
+      setJoke('Failed to load joke. Try again later!');
+    }
+    setIsLoadingJoke(false);
+  };
+
+  // Add effect for auto-fetching jokes
+  useEffect(() => {
+    // Fetch initial joke
+    fetchJoke();
+
+    // Set up interval for fetching new jokes
+    const jokeTimer = setInterval(() => {
+      fetchJoke();
+    }, 10000); // Fetch new joke every 10 seconds
+
+    return () => clearInterval(jokeTimer);
+  }, []);
 
   const handleWheel = useCallback((e) => {
     e.preventDefault();
@@ -137,20 +188,20 @@ function App() {
         </div>
       </section>
 
-      {/* Jokes AI Section */}
+      {/* Jokes Section */}
       <section className="h-screen w-screen flex items-center justify-center">
-        <div className="max-w-2xl w-full p-8">
-          <h2 className="text-5xl font-semibold text-white mb-8 text-center drop-shadow-lg">AI Genererade skämt 😂</h2>
+        <div className="max-w-4xl w-full p-8">
+          <h2 className="text-5xl font-semibold text-white mb-8 text-center drop-shadow-lg">AI Skämt</h2>
           <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-            <ul className="space-y-6 text-2xl text-white">
-              <li>Skämt 1</li>
-              <li>Skämt 2</li>
-              <li>Skämt 3</li>
-              <li>Skämt 4</li>
-              <li>Skämt 5</li>
-              <li>Skämt 6</li>
-              <li>Skämt 8</li>
-            </ul>
+            <div className="min-h-[200px] flex items-center justify-center">
+              {isLoadingJoke ? (
+                <div className="text-white text-2xl">Laddar skämt...</div>
+              ) : (
+                <p className="text-white text-2xl text-center transition-opacity duration-500">
+                  {joke}
+                </p>
+              )}
+            </div>
           </div>
         </div>
       </section>
