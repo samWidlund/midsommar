@@ -79,6 +79,4 @@ alla har ett glas vardera med dricka, alkohol eller vatten?
 - add drink list via api
 - add ai funny joke api
 - make section text bigger
-- fix joke ai
-- change backgroundcolor of sections
-
+- fix jokes ai api
