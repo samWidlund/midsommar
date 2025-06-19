@@ -6,6 +6,7 @@ import goofyhedlund from './img/goofyhedlund.jpeg';
 import goofyviveca from './img/goofyviveca.jpeg';
 import skironka from './img/skironka.jpeg';
 import snipesamuel from './img/snipesamuel.jpeg';
+import flowersbackground from './img/flowersbackground.jpeg';
 import { useEffect, useState, useCallback } from 'react';
 
 function App() {
@@ -158,7 +159,16 @@ function App() {
       onMouseLeave={handleMouseLeave}
     >
       {/* Hero Section */}
-      <section className="h-screen w-screen relative">
+      <section
+        className="h-screen w-screen relative"
+        style={{
+          backgroundImage: `url(${flowersbackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          position: 'relative'
+        }}
+      >
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${midsummer})` }}
@@ -173,7 +183,16 @@ function App() {
       </section>
 
       {/* Agenda Section */}
-      <section className="h-screen w-screen flex items-center justify-center">
+      <section
+        className="h-screen w-screen flex items-center justify-center"
+        style={{
+          backgroundImage: `url(${flowersbackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          position: 'relative'
+        }}
+      >
         <div className="max-w-2xl w-full p-8">
           <div className="flex justify-center mb-8">
             <h2 className="text-5xl text-center font-extrabold bg-white/90 text-gray-900 px-8 py-4 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block">
@@ -193,7 +212,16 @@ function App() {
       </section>
 
       {/* Jokes Section */}
-      <section className="h-screen w-screen flex items-center justify-center">
+      <section
+        className="h-screen w-screen flex items-center justify-center"
+        style={{
+          backgroundImage: `url(${flowersbackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          position: 'relative'
+        }}
+      >
         <div className="max-w-4xl w-full p-8">
           <div className="flex justify-center mb-8">
             <h2 className="text-5xl text-center font-extrabold bg-white/90 text-gray-900 px-8 py-4 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block">
@@ -215,7 +243,16 @@ function App() {
       </section>
 
       {/* 5 Kamp Section */}
-      <section className="h-screen w-screen flex items-center justify-center">
+      <section
+        className="h-screen w-screen flex items-center justify-center"
+        style={{
+          backgroundImage: `url(${flowersbackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          position: 'relative'
+        }}
+      >
         <div className="max-w-2xl w-full p-8">
           <div className="flex justify-center mb-8">
             <h2 className="text-5xl text-center font-extrabold bg-white/90 text-gray-900 px-8 py-4 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block">
@@ -236,7 +273,16 @@ function App() {
       </section>
 
       {/* Teams Section */}
-      <section className="h-screen w-screen flex items-center justify-center">
+      <section
+        className="h-screen w-screen flex items-center justify-center"
+        style={{
+          backgroundImage: `url(${flowersbackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          position: 'relative'
+        }}
+      >
         <div className="max-w-4xl w-full p-8">
           <div className="flex justify-center mb-8">
             <h2 className="text-5xl text-center font-extrabold bg-white/90 text-gray-900 px-8 py-4 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block">
@@ -269,8 +315,15 @@ function App() {
       </section>
 
       {/* Slideshow Section */}
-      <section 
+      <section
         className="h-screen w-screen flex items-center justify-center cursor-pointer"
+        style={{
+          backgroundImage: `url(${flowersbackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          position: 'relative'
+        }}
         onClick={() => {
           const nextSlide = (currentSlide + 1) % slides.length;
           setCurrentSlide(nextSlide);
@@ -314,7 +367,16 @@ function App() {
       </section>
 
       {/* Footer Section */}
-      <section className="h-screen w-screen flex items-center justify-center">
+      <section
+        className="h-screen w-screen flex items-center justify-center"
+        style={{
+          backgroundImage: `url(${flowersbackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          position: 'relative'
+        }}
+      >
         <div className="flex justify-center w-full">
           <span className="text-4xl font-light tracking-wide bg-white/90 text-gray-900 px-8 py-4 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block">
             © 2024 Samuel Widlund
