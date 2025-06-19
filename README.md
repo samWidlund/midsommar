@@ -38,6 +38,8 @@ planeringslista för midsommar hos Ines!
 
 extra - kubb
 
+extra - beerpong
+
 extra - fylla glaset (individuellt)
 alla har ett glas vardera med dricka, alkohol eller vatten?
 
