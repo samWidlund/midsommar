@@ -175,13 +175,17 @@ function App() {
       {/* Agenda Section */}
       <section className="h-screen w-screen flex items-center justify-center">
         <div className="max-w-2xl w-full p-8">
-          <h2 className="text-5xl font-semibold text-white mb-8 text-center drop-shadow-lg">Agenda</h2>
-          <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-            <ul className="space-y-6 text-2xl text-white">
-              <li>- <span className="font-bold text-yellow-300">11:00</span> start kransfix </li>
-              <li>- <span className="font-bold text-yellow-300">12:30</span> två st lekar</li>
-              <li>- <span className="font-bold text-yellow-300">13:30</span> lunch </li>
-              <li>- <span className="font-bold text-yellow-300">14:30</span> tre st lekar </li>
+          <div className="flex justify-center mb-8">
+            <h2 className="text-5xl text-center font-extrabold bg-white/90 text-gray-900 px-8 py-4 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block">
+              Agenda
+            </h2>
+          </div>
+          <div className="bg-white/70 p-6 rounded-xl shadow-2xl border border-gray-300">
+            <ul className="space-y-6 text-2xl text-gray-900 font-semibold">
+              <li>- <span className="font-bold text-yellow-500">11:00</span> start kransfix </li>
+              <li>- <span className="font-bold text-yellow-500">12:30</span> två st lekar</li>
+              <li>- <span className="font-bold text-yellow-500">13:30</span> lunch </li>
+              <li>- <span className="font-bold text-yellow-500">14:30</span> tre st lekar </li>
               <li>- middag löser vi enkelt, e.x pizza?</li>
             </ul>
           </div>
@@ -191,13 +195,17 @@ function App() {
       {/* Jokes Section */}
       <section className="h-screen w-screen flex items-center justify-center">
         <div className="max-w-4xl w-full p-8">
-          <h2 className="text-5xl font-semibold text-white mb-8 text-center drop-shadow-lg">AI Skämt</h2>
-          <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+          <div className="flex justify-center mb-8">
+            <h2 className="text-5xl text-center font-extrabold bg-white/90 text-gray-900 px-8 py-4 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block">
+              AI Skämt
+            </h2>
+          </div>
+          <div className="bg-white/70 p-6 rounded-xl shadow-2xl border border-gray-300">
             <div className="min-h-[200px] flex items-center justify-center">
               {isLoadingJoke ? (
-                <div className="text-white text-2xl">Laddar skämt...</div>
+                <div className="text-gray-900 text-2xl font-semibold">Laddar skämt...</div>
               ) : (
-                <p className="text-white text-2xl text-center transition-opacity duration-500">
+                <p className="text-gray-900 text-2xl text-center font-semibold transition-opacity duration-500">
                   {joke}
                 </p>
               )}
@@ -209,9 +217,13 @@ function App() {
       {/* 5 Kamp Section */}
       <section className="h-screen w-screen flex items-center justify-center">
         <div className="max-w-2xl w-full p-8">
-          <h2 className="text-5xl font-semibold text-white mb-8 text-center drop-shadow-lg">5 Kamp</h2>
-          <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-            <ul className="space-y-6 text-2xl text-white">
+          <div className="flex justify-center mb-8">
+            <h2 className="text-5xl text-center font-extrabold bg-white/90 text-gray-900 px-8 py-4 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block">
+              5 Kamp
+            </h2>
+          </div>
+          <div className="bg-white/70 p-6 rounded-xl shadow-2xl border border-gray-300">
+            <ul className="space-y-6 text-2xl text-gray-900 font-semibold">
               <li>1. kasta stövel</li>
               <li>2. flip cup</li>
               <li>3. trebent löpning</li>
@@ -226,11 +238,15 @@ function App() {
       {/* Teams Section */}
       <section className="h-screen w-screen flex items-center justify-center">
         <div className="max-w-4xl w-full p-8">
-          <h2 className="text-5xl font-semibold text-white mb-8 text-center drop-shadow-lg">Lag</h2>
+          <div className="flex justify-center mb-8">
+            <h2 className="text-5xl text-center font-extrabold bg-white/90 text-gray-900 px-8 py-4 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block">
+              Lag
+            </h2>
+          </div>
           <div className="grid grid-cols-2 gap-8">
-            <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="text-3xl mb-4 text-center text-white">Lag 1</h3>
-              <ul className="space-y-3 text-2xl text-white text-center">
+            <div className="bg-white/70 p-6 rounded-xl shadow-2xl border border-gray-300">
+              <h3 className="text-3xl mb-4 text-center text-gray-900 font-bold">Lag 1</h3>
+              <ul className="space-y-3 text-2xl text-gray-900 font-semibold text-center">
                 <li>• viveca</li>
                 <li>• samuel</li>
                 <li>• signe</li>
@@ -238,9 +254,9 @@ function App() {
                 <li>• sebbe</li>
               </ul>
             </div>
-            <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="text-3xl mb-4 text-center text-white">Lag 2 (lite sämre😂)</h3>
-              <ul className="space-y-3 text-2xl text-white text-center">
+            <div className="bg-white/70 p-6 rounded-xl shadow-2xl border border-gray-300">
+              <h3 className="text-3xl mb-4 text-center text-gray-900 font-bold">Lag 2 (lite sämre😂)</h3>
+              <ul className="space-y-3 text-2xl text-gray-900 font-semibold text-center">
                 <li>• lea</li>
                 <li>• kelam</li>
                 <li>• lisa</li>
@@ -261,8 +277,12 @@ function App() {
         }}
       >
         <div className="max-w-4xl w-full p-8">
-          <h2 className="text-5xl font-semibold text-white mb-8 text-center drop-shadow-lg">Goofy bilder</h2>
-          <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+          <div className="flex justify-center mb-8">
+            <h2 className="text-5xl text-center font-extrabold bg-white/90 text-gray-900 px-8 py-4 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block">
+              Goofy bilder
+            </h2>
+          </div>
+          <div className="bg-white/70 p-6 rounded-xl shadow-2xl border border-gray-300">
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-black/50">
               {slides.map((slide, index) => (
                 <img 
@@ -280,7 +300,7 @@ function App() {
                 <button
                   key={index}
                   className={`w-3 h-3 rounded-full transition-colors ${
-                    index === currentSlide ? 'bg-yellow-300' : 'bg-white/50'
+                    index === currentSlide ? 'bg-yellow-300' : 'bg-gray-400'
                   }`}
                   onClick={(e) => {
                     e.stopPropagation();
@@ -295,8 +315,10 @@ function App() {
 
       {/* Footer Section */}
       <section className="h-screen w-screen flex items-center justify-center">
-        <div className="text-white text-4xl font-light tracking-wide">
-          © 2024 Samuel Widlund
+        <div className="flex justify-center w-full">
+          <span className="text-4xl font-light tracking-wide bg-white/90 text-gray-900 px-8 py-4 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block">
+            © 2024 Samuel Widlund
+          </span>
         </div>
       </section>
     </main>
