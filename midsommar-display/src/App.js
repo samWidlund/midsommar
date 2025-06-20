@@ -239,8 +239,16 @@ function App() {
               ) : drink ? (
                 <>
                   <div className="text-gray-900 text-5xl font-bold mb-6">{drink.strDrink}</div>
-                  {drink.strDrinkThumb && (
-                    <img src={drink.strDrinkThumb} alt={drink.strDrink} className="w-64 rounded-xl shadow-lg mb-6" />
+                  {drink.strDrinkThumb ? (
+                    <img
+                      src={drink.strDrinkThumb}
+                      alt={drink.strDrink}
+                      className="w-64 rounded-xl shadow-lg mb-6"
+                    />
+                  ) : (
+                    <div className="w-64 h-64 flex items-center justify-center bg-gray-200 rounded-xl shadow-lg mb-6 text-gray-500 text-xl">
+                      Ingen bild
+                    </div>
                   )}
                   <div className="text-gray-900 text-2xl mb-2">{drink.strCategory}</div>
                   <div className="text-gray-900 text-2xl text-center font-bold transition-opacity duration-500 mb-6">
