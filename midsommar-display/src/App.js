@@ -208,7 +208,7 @@ function App() {
               </li>
               <li className="flex items-center gap-8 text-3xl">
                 <span className="min-w-[170px]"></span>
-                <span>middag löser vi enkelt, e.x pizza?</span>
+                <span>- middag löser vi enkelt, e.x pizza?</span>
               </li>
             </ul>
           </div>
