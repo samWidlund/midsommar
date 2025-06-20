@@ -6,7 +6,7 @@ import goofyhedlund from './img/goofyhedlund.jpeg';
 import goofyviveca from './img/goofyviveca.jpeg';
 import skironka from './img/skironka.jpeg';
 import snipesamuel from './img/snipesamuel.jpeg';
-import flowersbackground from './img/flowersbackground.jpeg';
+import flowersbackground from './img/midsummerbackground.jpg';
 import { useEffect, useState, useCallback } from 'react';
 
 function App() {
