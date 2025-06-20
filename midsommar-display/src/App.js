@@ -199,13 +199,29 @@ function App() {
               Agenda
             </h2>
           </div>
-          <div className="bg-white/70 p-6 rounded-xl shadow-2xl border border-gray-300">
+          <div className="bg-white/90 p-6 rounded-xl shadow-2xl border border-gray-300">
             <ul className="space-y-6 text-2xl text-gray-900 font-semibold">
-              <li>- <span className="font-bold text-yellow-500">11:00</span> start kransfix </li>
-              <li>- <span className="font-bold text-yellow-500">12:30</span> två st lekar</li>
-              <li>- <span className="font-bold text-yellow-500">13:30</span> lunch </li>
-              <li>- <span className="font-bold text-yellow-500">14:30</span> tre st lekar </li>
-              <li>- middag löser vi enkelt, e.x pizza?</li>
+              <li>
+                - <span className="font-bold text-yellow-400 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] bg-black/80 px-3 py-1 rounded-lg">
+                  11:00
+                </span> start kransfix
+              </li>
+              <li>
+                - <span className="font-bold text-yellow-400 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] bg-black/80 px-3 py-1 rounded-lg">
+                  12:30
+                </span> två st lekar
+              </li>
+              <li>
+                - <span className="font-bold text-yellow-400 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] bg-black/80 px-3 py-1 rounded-lg">
+                  13:30
+                </span> lunch
+              </li>
+              <li>
+                - <span className="font-bold text-yellow-400 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] bg-black/80 px-3 py-1 rounded-lg">
+                  14:30
+                </span> tre st lekar
+              </li>
+              <li>middag löser vi enkelt, e.x pizza?</li>
             </ul>
           </div>
         </div>
