@@ -300,7 +300,7 @@ function App() {
               <li>kasta stövel</li>
               <li>flip cup</li>
               <li>trebent löpning</li>
-              <li>irländsk julafton</li>Dagens Drink (Ai genererad)
+              <li>irländsk julafton</li>
               <li>dragkamp</li>
               <li className="text-3xl">extra - kubb & fylla glaset</li>
             </ul>
