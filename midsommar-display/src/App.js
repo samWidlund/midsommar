@@ -329,7 +329,7 @@ function App() {
               </ul>
             </div>
             <div className="bg-white/95 p-12 rounded-2xl shadow-2xl border-2 border-gray-400 w-full">
-              <h3 className="text-5xl mb-8 text-center text-gray-900 font-bold">Lag 2 (lite sämre😂)</h3>
+              <h3 className="text-5xl mb-8 text-center text-gray-900 font-bold">Lag 2</h3>
               <ul className="space-y-6 text-3xl text-gray-900 font-bold text-center">
                 <li>• lea</li>
                 <li>• kelam</li>
