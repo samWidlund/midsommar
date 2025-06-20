@@ -14,8 +14,8 @@ function App() {
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
-  const [joke, setJoke] = useState('');
-  const [isLoadingJoke, setIsLoadingJoke] = useState(false);
+  const [drink, setDrink] = useState(null);
+  const [isLoadingDrink, setIsLoadingDrink] = useState(false);
   const totalSections = 7;
 
   // Slideshow images
@@ -29,52 +29,33 @@ function App() {
   ];
 
   // hugging face ai API
-  const fetchJoke = async () => {
-    setIsLoadingJoke(true);
+  const fetchDrink = async () => {
+    setIsLoadingDrink(true);
     try {
-      const response = await fetch(
-        "https://api-inference.huggingface.co/models/FaisalGh/distilgpt2-joke-generator",
-        {
-          headers: {
-            "Authorization": "Bearer " + process.env.REACT_APP_MIDSUMMER_HF_TOKEN,
-            "Content-Type": "application/json",
-          },
-          method: "POST",
-          body: JSON.stringify({
-            inputs: "Tell me a joke:",
-            parameters: {
-              max_length: 70,
-              temperature: 0.7,
-            }
-          }),
-        }
-      );
-      const result = await response.json();
-      if (Array.isArray(result) && result[0]?.generated_text) {
-        setJoke(result[0].generated_text);
-      } else if (result.error) {
-        setJoke('API error: ' + result.error);
+      const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php');
+      const data = await response.json();
+      if (data.drinks && data.drinks.length > 0) {
+        setDrink(data.drinks[0]);
       } else {
-        setJoke('Failed to load joke. Try again later!');
+        setDrink({ strDrink: 'Ingen drink hittades!', strInstructions: '', strDrinkThumb: '' });
       }
     } catch (error) {
-      console.error('Error fetching joke:', error);
-      setJoke('Failed to load joke. Try again later!');
+      setDrink({ strDrink: 'Fel vid hämtning av drink!', strInstructions: '', strDrinkThumb: '' });
     }
-    setIsLoadingJoke(false);
+    setIsLoadingDrink(false);
   };
 
   // Add effect for auto-fetching jokes
   useEffect(() => {
     // Fetch initial joke
-    fetchJoke();
+    fetchDrink();
 
     // Set up interval for fetching new jokes
-    const jokeTimer = setInterval(() => {
-      fetchJoke();
+    const drinkTimer = setInterval(() => {
+      fetchDrink();
     }, 10000); // Fetch new joke every 10 seconds
 
-    return () => clearInterval(jokeTimer);
+    return () => clearInterval(drinkTimer);
   }, []);
 
   const handleWheel = useCallback((e) => {
@@ -248,17 +229,41 @@ function App() {
         <div className="w-full p-16">
           <div className="flex justify-center mb-12">
             <h2 className="text-7xl text-center font-extrabold bg-white/95 text-gray-900 px-16 py-8 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block w-full">
-              AI Skämt
+              Dagens Drink (Ai genererad)
             </h2>
           </div>
           <div className="bg-white/95 p-12 rounded-2xl shadow-2xl border-2 border-gray-400 w-full">
-            <div className="min-h-[300px] flex items-center justify-center">
-              {isLoadingJoke ? (
-                <div className="text-gray-900 text-4xl font-bold">Laddar skämt...</div>
+            <div className="min-h-[300px] flex flex-col items-center justify-center">
+              {isLoadingDrink ? (
+                <div className="text-gray-900 text-4xl font-bold">Laddar drink...</div>
+              ) : drink ? (
+                <>
+                  <div className="text-gray-900 text-5xl font-bold mb-6">{drink.strDrink}</div>
+                  {drink.strDrinkThumb && (
+                    <img src={drink.strDrinkThumb} alt={drink.strDrink} className="w-64 rounded-xl shadow-lg mb-6" />
+                  )}
+                  <div className="text-gray-900 text-2xl mb-2">{drink.strCategory}</div>
+                  <div className="text-gray-900 text-2xl text-center font-bold transition-opacity duration-500 mb-6">
+                    {drink.strInstructions}
+                  </div>
+                  <div className="text-gray-900 text-3xl font-bold mb-2">Ingredienser:</div>
+                  <ul className="text-gray-900 text-2xl mb-4">
+                    {Array.from({ length: 15 }).map((_, i) => {
+                      const ingredient = drink[`strIngredient${i + 1}`];
+                      const measure = drink[`strMeasure${i + 1}`];
+                      if (ingredient && ingredient.trim() !== "") {
+                        return (
+                          <li key={i}>
+                            {measure ? <span className="font-semibold">{measure}</span> : null} {ingredient}
+                          </li>
+                        );
+                      }
+                      return null;
+                    })}
+                  </ul>
+                </>
               ) : (
-                <p className="text-gray-900 text-4xl text-center font-bold transition-opacity duration-500">
-                  {joke}
-                </p>
+                <div className="text-gray-900 text-2xl">Ingen drink hittades!</div>
               )}
             </div>
           </div>
