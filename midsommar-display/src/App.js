@@ -229,7 +229,7 @@ function App() {
         <div className="w-full p-16">
           <div className="flex justify-center mb-12">
             <h2 className="text-7xl text-center font-extrabold bg-white/95 text-gray-900 px-16 py-8 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block w-full">
-              Dagens Drink (Ai genererad)
+              Ai-genererat drink tips!
             </h2>
           </div>
           <div className="bg-white/95 p-12 rounded-2xl shadow-2xl border-2 border-gray-400 w-full">
