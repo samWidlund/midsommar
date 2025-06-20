@@ -284,16 +284,16 @@ function App() {
         <div className="w-full p-16">
           <div className="flex justify-center mb-12">
             <h2 className="text-7xl text-center font-extrabold bg-white/95 text-gray-900 px-16 py-8 rounded-2xl shadow-2xl border-2 border-yellow-400 drop-shadow-lg inline-block w-full">
-              5 Kamp
+              Samme olympics! <br /> (5-kamp)
             </h2>
           </div>
           <div className="bg-white/95 p-12 rounded-2xl shadow-2xl border-2 border-gray-400 w-full">
             <ul className="space-y-10 text-4xl text-gray-900 font-bold text-center">
-              <li>1. kasta stövel</li>
-              <li>2. flip cup</li>
-              <li>3. trebent löpning</li>
-              <li>4. irländsk julafton</li>
-              <li>5. dragkamp</li>
+              <li>kasta stövel</li>
+              <li>flip cup</li>
+              <li>trebent löpning</li>
+              <li>irländsk julafton</li>Dagens Drink (Ai genererad)
+              <li>dragkamp</li>
               <li className="text-3xl">extra - kubb & fylla glaset</li>
             </ul>
           </div>
