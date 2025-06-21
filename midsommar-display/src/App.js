@@ -114,17 +114,6 @@ function App() {
     };
   }, [currentSection, isAutoScrolling, handleWheel, slides.length]);
 
-  const handleMouseEnter = useCallback(() => {
-    setIsAutoScrolling(false);
-  }, []);
-
-  const handleMouseLeave = useCallback(() => {
-    // Only resume auto-scroll if we're not in the middle of a manual scroll
-    if (!isScrolling) {
-      setIsAutoScrolling(true);
-    }
-  }, [isScrolling]);
-
   return (
     <main 
       className={`auto-scroll ${!isAutoScrolling ? 'manual-scroll' : ''} cursor-pointer`} 
@@ -136,8 +125,6 @@ function App() {
         const nextSlide = (currentSlide + 1) % slides.length;
         setCurrentSlide(nextSlide);
       }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
     >
       {/* Hero Section */}
       <section
@@ -334,6 +321,8 @@ function App() {
                 <li>• signe</li>
                 <li>• tim</li>
                 <li>• sebbe</li>
+                <li>• melvin</li>
+                <li>• miriam</li>
               </ul>
             </div>
             <div className="bg-white/95 p-12 rounded-2xl shadow-2xl border-2 border-gray-400 w-full">
@@ -344,6 +333,8 @@ function App() {
                 <li>• lisa</li>
                 <li>• ines</li>
                 <li>• robin</li>
+                <li>• alex</li>
+                <li>• lite ellen</li>
               </ul>
             </div>
           </div>

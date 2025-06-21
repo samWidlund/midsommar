@@ -14,20 +14,26 @@ body {
 }
 
 @keyframes scroll {
-  0%, 20% {
+  0%, 14.28% {
     transform: translateY(0);
   }
-  25%, 45% {
+  20%, 28.56% {
     transform: translateY(-100vh);
   }
-  50%, 70% {
+  34.28%, 42.84% {
     transform: translateY(-200vh);
   }
-  75%, 95% {
+  48.56%, 57.12% {
     transform: translateY(-300vh);
   }
-  97%, 100% {
+  62.84%, 71.40% {
     transform: translateY(-400vh);
+  }
+  77.12%, 85.68% {
+    transform: translateY(-500vh);
+  }
+  91.40%, 100% {
+    transform: translateY(-600vh);
   }
 }
 
@@ -38,10 +44,6 @@ body {
 
 .manual-scroll {
   animation: none;
-}
-
-.auto-scroll:hover {
-  animation-play-state: paused;
 }
 
 /* Swedish midsummer background */
