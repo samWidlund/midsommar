@@ -14,20 +14,26 @@ body {
 }
 
 @keyframes scroll {
-  0%, 20% {
+  0%, 14.28% {
     transform: translateY(0);
   }
-  25%, 45% {
+  20%, 28.56% {
     transform: translateY(-100vh);
   }
-  50%, 70% {
+  34.28%, 42.84% {
     transform: translateY(-200vh);
   }
-  75%, 95% {
+  48.56%, 57.12% {
     transform: translateY(-300vh);
   }
-  97%, 100% {
+  62.84%, 71.40% {
     transform: translateY(-400vh);
+  }
+  77.12%, 85.68% {
+    transform: translateY(-500vh);
+  }
+  91.40%, 100% {
+    transform: translateY(-600vh);
   }
 }
 
@@ -40,13 +46,9 @@ body {
   animation: none;
 }
 
-.auto-scroll:hover {
-  animation-play-state: paused;
-}
-
 /* Swedish midsummer background */
 section:not(:first-child) {
-  background: linear-gradient(135deg, #1a4b6e 0%, #2d7d46 100%);
+  background: linear-gradient(135deg, #87CEEB 0%, #98FB98 20%, #FFFF99 40%, #FFD700 60%, #FFA500 80%, #FF6347 100%);
   position: relative;
 }
 
@@ -117,4 +119,39 @@ section:not(:first-child)::after {
   padding: 2rem;
   border-radius: 8px;
   animation: borderAnimation 5s linear infinite;
+}
+
+/* Gör rutorna tydligare mot bakgrunden */
+.bg-white\/10,
+.bg-white\/30,
+.bg-white\/40 {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  /* Tailwind-override för att säkerställa att det syns */
+  border-radius: 1rem;
+  border: 2px solid rgba(255,255,255,0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(6px);
+}
+
+/* Extra tydlig ruta för sektionernas innehåll */
+.bg-white\/70 {
+  background-color: rgba(255,255,255,0.7) !important;
+  border-radius: 1rem;
+  border: 2px solid rgba(0,0,0,0.08);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(6px);
+}
+
+/* Tydligare rubriker */
+.section-heading {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  background: rgba(255,255,255,0.85);
+  color: #1a202c; /* Mörk text */
+  border-radius: 0.75rem;
+  font-weight: 800;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18), 0 1px 0 #fff;
+  letter-spacing: 0.04em;
 }
