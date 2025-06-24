@@ -1,7 +1,17 @@
-# MIDSOMMAR 2025!
-planeringslista för midsommar hos Ines!
+# MIDSUMMER 2025!
+Info display created using React.js
 
-- [agenda](#agenda)
+## Setup
+
+1. Run `npm install` in the terminal to install all dependencies.
+2. Start the app with `npm start`.
+
+> **Note:** The app is designed for a **portrait mode monitor** (1080x1920).  
+> It is not responsive and may not display correctly on mobile or landscape screens.
+
+<br>
+
+# Planning (swedish)
 
 ## lista + ansvar
 
