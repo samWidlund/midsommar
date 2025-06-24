@@ -9,6 +9,9 @@ Info display created using React.js
 > **Note:** The app is designed for a **portrait mode monitor** (1080x1920).  
 > It is not responsive and may not display correctly on mobile or landscape screens.
 
+## backlog
+- cleanup comments
+
 <br>
 
 # Planning (swedish)
@@ -85,6 +88,3 @@ alla har ett glas vardera med dricka, alkohol eller vatten?
 4. tre st lekar **14:30**
 5. middag lös något enkelt
    - ekebygrillen pizza?
-
-## backlog
-- cleanup comments
