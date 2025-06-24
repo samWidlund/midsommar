@@ -1,5 +1,5 @@
 # MIDSUMMER 2025!
-Info display created using React.js
+Info display created using React.js & TheCocktailDB API.
 
 ## Setup
 
